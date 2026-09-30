@@ -268,3 +268,15 @@ class SafetycheckEntry(BaseModel):
     field_5: str | None = None  # 整改措施
     field_6: str | None = None  # 整改期限
     field_7: str | None = None  # 巡检状态
+
+class PollutantEntry(BaseModel):
+    """船舶污染物接收单据明细结构。"""
+
+    field_0: str | None = None  # 接收单号
+    field_1: str | None = None  # 船名
+    field_2: str | None = None  # 航次
+    field_3: str | None = None  # 原填报人
+    field_4: float | None = None  # 生活垃圾
+    field_5: float | None = None  # 含油污水
+    field_6: float | None = None  # 生活污水
+    field_7: float | None = None  # 残油废油
